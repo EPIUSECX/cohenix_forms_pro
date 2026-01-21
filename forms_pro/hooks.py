@@ -242,4 +242,7 @@ export_python_type_annotations = True
 
 website_route_rules = [
     {"from_route": "/forms/<path:app_path>", "to_route": "forms"},
+    # Keep app launcher route working (and allow SPA-style nested routes)
+    {"from_route": "/forms_pro", "to_route": "forms"},
+    {"from_route": "/forms_pro/<path:app_path>", "to_route": "forms"},
 ]
